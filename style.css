@@ -1,0 +1,163 @@
+
+body {
+  background-color:orange;
+  margin: 20px;
+  overflow:hidden;
+}
+
+fmain, fsub {
+  display: flex;
+  flex-direction: column;
+  top:0;
+}
+
+fmain {
+  float:left;
+  background-color:green;
+}
+
+fsub {
+  float:right;
+  background-color:green;
+}
+
+
+
+@media ( max-width: 786px ) {
+  fmain {
+     float:top;
+  }
+  div {
+     height:auto;
+     width:100%;
+  }
+  fsub {
+     float:bottom;
+  }
+  divi { display: inline; text-align:center; margin-left:13% }
+
+  .box {
+     hieght:none;
+  }
+
+  .wrapper {
+     grid-template-columns: 100%;
+     grid-template-rows: 15% 70% 15%;
+     display:flex;
+     flex-wrap:wrap;
+    /* position:absolute; */
+  }
+  .wrapper .box {
+     width:100%;
+     display:absolute;
+     border: 4px solid blue;
+  }
+
+  body {
+     background-color:blue;
+  }
+
+  .wrapper .box a {
+     text-align:center;
+  }
+
+  footer {
+     border: 5px solid blue;
+  }
+  lft {
+     width:93%;
+  }
+  rgt {
+     width:93%;
+  }
+
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap:grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-gap: 10px;
+  height:90%;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  border: 4px solid orange;
+  font-size: 150%;
+}
+
+divi {
+  line-height: 3em;
+}
+
+header {
+  background-color:yellow;
+  /*  position:absolute; */
+  top:0;
+  height:10%;
+  width: 100%;
+  text-align:center;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  background-color:yellow;
+  display:inline-block;
+  border-top: 5px solid;
+  float:bottom;
+  height:10%;
+  width: 97%;
+  text-align:center;
+}
+
+@media ( max-width: 580px ) {
+  body {
+     background-color: green;
+     overflow-y:scroll;
+  }
+  footer {
+     display:none;
+  }
+  .wrapper {
+   display:flex;
+  margin:auto;
+     flex-wrapper:stretch;
+  }
+
+  div .box a {
+     display:inline;
+     float:left;
+     width: 30%;
+     margin:auto;
+  }
+  div .box b {
+     display:inline-block;
+     hieght: 100%;
+     float: right:
+  }
+
+  div ."box c" {
+    position:absolute
+    display:inline-block;
+    width: 100%;
+    bottom: 0;
+  }
+
+  wrapper .box .c {
+     display:relative;
+     position:absolute;
+     width:100%;
+     bottom:0;
+   }
+  header, footer {
+     display: none;
+  }
+
+}
